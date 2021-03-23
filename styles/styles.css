@@ -309,6 +309,16 @@ body {
   color: rgb(190, 11, 11);
 }
 
+.overlay {
+  background-color: rgba(34, 33, 33, 0.384);
+  position: fixed;
+  top: 4.4375rem;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  visibility: hidden;
+}
+
 /* Media query */
 
 @media (min-width: 1201px) {
@@ -316,6 +326,10 @@ body {
     display: none;
   }
   .toggle-menu {
+    display: none;
+  }
+
+  .overlay {
     display: none;
   }
 }
@@ -329,6 +343,10 @@ body {
     font-size: 2.1rem;
   }
   .toggle-menu {
+    display: none;
+  }
+
+  .overlay {
     display: none;
   }
 }
@@ -354,6 +372,10 @@ body {
     font-size: 1.8rem;
   }
   .toggle-menu {
+    display: none;
+  }
+
+  .overlay {
     display: none;
   }
   .center-info {
