@@ -1,0 +1,312 @@
+html,
+body {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+  -moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+  box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+}
+
+.header-contents {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.img-logo {
+  width: 3.5rem;
+  justify-content: left;
+}
+
+.menu-burger {
+  width: 26px;
+  height: 2px;
+  background-color: #91091e;
+  margin: 6px 0;
+  border-radius: 2px;
+}
+
+.header-links {
+  margin: auto;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #91091e;
+  margin-right: 32px;
+  font-weight: 500;
+  font-size: 0.8em;
+  transition: color 200ms ease-in-out;
+}
+
+.header-links a:last-child {
+  margin-right: 0;
+}
+
+.header-links a:hover {
+  color: #cc561e;
+}
+
+.donate-button {
+  padding: 0.875rem 2.1875rem;
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #c39e5c, #da723c);
+  border-radius: 50px;
+}
+
+.donate-button a {
+  color: #fff;
+  font-weight: 600;
+  outline: none;
+  text-decoration: none;
+}
+
+.donate-button:hover {
+  opacity: 0.9;
+}
+
+.toggle-menu {
+  background: #fff;
+  padding: 1.625rem;
+  margin: 1rem 1.5rem 0 1.5rem;
+  border-radius: 3px;
+  display: block;
+  z-index: 1;
+  position: absolute;
+  width: calc(100% - 5rem);
+  left: 20%;
+  transform: translateX(-20%);
+  visibility: hidden;
+}
+
+.toggle-menu a {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  color: #91091e;
+  padding: 0.625rem;
+  text-decoration: none;
+}
+
+.homepage-info {
+  text-align: center;
+  margin: 80px auto;
+  min-height: calc(100vh - 450px);
+}
+
+.homepage-info h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #493323;
+  margin: 3rem auto;
+  padding-top: 2rem;
+}
+
+.footer {
+  width: 100%;
+}
+
+.contact-footer {
+  background-color: #41584b;
+  padding: 5%;
+  text-align: center;
+}
+
+.contact-footer h2 {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.contact-now {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: solid 3.2px #f4f3f3;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  margin-top: 20px;
+  transition: 200ms ease-in-out;
+  text-decoration: none;
+  color: #f4f3f3;
+  font-weight: 600;
+}
+
+.contact-now:hover {
+  background-color: #f4f3f3;
+  color: rgb(190, 11, 11);
+}
+
+.icons {
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #f4f3f3;
+}
+
+.icon {
+  margin-left: 0;
+  margin-top: 40px;
+  color: #f4f3f3;
+}
+
+.copywrigth {
+  color: #f4f3f3;
+  margin-top: 30px;
+}
+
+.heart-icon {
+  color: rgb(190, 11, 11);
+}
+
+.overlay {
+  background-color: rgba(34, 33, 33, 0.384);
+  position: fixed;
+  top: 4.4375rem;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  visibility: hidden;
+}
+
+/* Media query */
+
+@media (min-width: 1201px) {
+  .menu-burger {
+    display: none;
+  }
+  .toggle-menu {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .menu-burger {
+    display: none;
+  }
+
+  .toggle-menu {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu-burger {
+    display: none;
+  }
+  .toggle-menu {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+}
+
+@media (min-width: 691px) and (max-width: 767px) {
+  .menu {
+    margin: auto 0 auto auto;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .toggle-menu {
+    visibility: hidden;
+  }
+
+  .donate-button {
+    display: none;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 690px) {
+  .menu {
+    margin: auto 0 auto auto;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .toggle-menu {
+    visibility: hidden;
+  }
+
+  .donate-button {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+  .menu {
+    margin: auto 10px auto auto;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .toggle-menu {
+    visibility: hidden;
+  }
+
+  .donate-button {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu {
+    margin: auto 10px auto auto;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .toggle-menu {
+    visibility: hidden;
+  }
+
+  .donate-button {
+    display: none;
+  }
+}
