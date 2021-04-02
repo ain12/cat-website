@@ -140,6 +140,9 @@ body {
   width: calc(100% - 5rem);
   left: 20%;
   transform: translateX(-20%);
+  -webkit-box-shadow: 5px 10px 8px rgba(100, 100, 100, 0.49);
+  -moz-box-shadow: 5px 10px 8px rgba(100, 100, 100, 0.49);
+  box-shadow: 5px 10px 8px rgba(100, 100, 100, 0.49);
 }
 
 .toggle-menu a {
