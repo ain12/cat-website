@@ -121,7 +121,7 @@ body {
 .homepage-info {
   text-align: center;
   padding: 90px;
-  min-height: calc(100vh - 450px);
+  min-height: calc(100vh - 330px);
 }
 
 .homepage-info h2 {
@@ -352,6 +352,10 @@ body {
     font-size: 16px;
     text-align: left;
   }
+
+  .homepage-info {
+    padding: 60px 50px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -370,5 +374,13 @@ body {
   .card-body p {
     font-size: 16px;
     text-align: left;
+  }
+
+  .homepage-info h2 {
+    font-size: 2rem;
+  }
+
+  .homepage-info {
+    padding: 60px 50px;
   }
 }
