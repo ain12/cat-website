@@ -30,7 +30,7 @@ $(".submitBtn").click(function (event) {
     console.log("Valid Email");
   }
 
-  if (name.length > 0) {
+  if (name.length > 1) {
     console.log("Valid name");
   } else {
     event.preventDefault();
