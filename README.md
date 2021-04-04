@@ -1,6 +1,6 @@
 # cat-website
 
-A webpage to adopt cats. This is a static website to practice my skills in HTML5, CSS3, Bootstrap, vanilla Javascript and JQ. I have used a different HTML and CSS (styles folder) file for each section: main page(index and styles), about, adopt and contact section. The JS and JQ code is in the JS folder. The images used in this website are in the img folder.
+A webpage to adopt cats. This is a static website to practice my skills in HTML5, CSS3, Bootstrap, vanilla Javascript and JQ. I have used a different HTML and CSS (styles folder) file for each section: main page (index and styles), about, adopt and contact section. The JS and JQ code is in the JS folder. The images used in this website are in the img folder.
 
 # Contact-page section
 
